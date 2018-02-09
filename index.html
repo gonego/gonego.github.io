@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Don't Panic</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Internal CSS</title>
+  <style>
+      a {
+        color: red;
+      }
+      .bar {
+        border: 1px solid black;
+      }
+      .bar a{
+        color:green;
+      }
+      #foo{
+        background-color: lightgrey;
+      }
+      .foobar{
+        background-color: lightpink;
+      }
+      .foobar a{
+        color:blue;
+      }
+
+    </style>
+  </head>
+  <body>
     <h1>I'm an h1</h1>
     <ul>
       <li>
-        <a href="http://example.com/" style="color: red;">Link</a>
+        <a href="http://example.com/">Link</a>
       </li>
       <li>
-        <a href="http://example.com/" style="color: red;">Link</a>
+        <a href="http://example.com/">Link</a>
       </li>
       <li>
-        <a href="http://example.com/" style="color: red;">Link</a>
+        <a href="http://example.com/">Link</a>
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div style="border: 1px solid black;">
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="foobar">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bar" id="foo">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bar">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-    <div style="border: 1px solid black;">
-      <a href="http://example.com/" style="color: green;">I'm a link</a>
+    <div class="bar">
+      <a href="http://example.com/">I'm a link</a>
     </div>
-</body>
+  </body>
 </html>
